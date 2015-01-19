@@ -23,6 +23,8 @@ Suggests:	fuse-afp
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%undefine	__cxx
+
 %description
 A command line client to access files exported from Mac OS system via
 Apple Filing Protocol.
