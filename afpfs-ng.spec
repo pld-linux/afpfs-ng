@@ -48,9 +48,9 @@ Library for dynamic linking and header files of afpfs-ng.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 
 # make would rebuild the autoconf infrastructure due to the following:
 # Prerequisite `configure.ac' is newer than target `Makefile.in'.
